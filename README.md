@@ -2,7 +2,7 @@
 # 🧬 Analisis Differential Expression Genes (DEG) pada Kanker Pankreas
 ### Menggunakan Dataset GEO Publik (GSE10072) dengan Pendekatan Limma
 
-> **Mini Proyek Bioinformatika** | [Nama Mata Kuliah] | [Nama Institusi]
+> **Mini Proyek Bioinformatika** | Bioinformatika | 
 
 ---
 
@@ -34,7 +34,7 @@ Selain analisis DEG standar menggunakan **limma**, proyek ini menambahkan:
 |---------|--------|
 | **GEO Accession** | [GEO GSE28735](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi) |
 | **Platform** | Affymetrix Human Gene 1.0 ST Array  |
-| **Sampel** | 58 tumor + 49 normal lung tissue |
+| **Sampel** | xxxx |
 | **Organisme** | *Homo sapiens* |
 
 

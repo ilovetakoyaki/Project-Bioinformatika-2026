@@ -34,7 +34,7 @@ Selain analisis DEG standar menggunakan **limma**, proyek ini menambahkan:
 |---------|--------|
 | **GEO Accession** | [GEO GSE28735](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi) |
 | **Platform** | Affymetrix Human Gene 1.0 ST Array  |
-| **Sampel** | xxxx |
+| **Sampel** | 45Tumor + 45Normal Pancreatic Tissue (paired) |
 | **Organisme** | *Homo sapiens* |
 
 
@@ -44,12 +44,12 @@ Selain analisis DEG standar menggunakan **limma**, proyek ini menambahkan:
 
 ```r
 # Bioconductor
-GEOquery       # Download data dari NCBI GEO
-limma          # Analisis DEG (Linear Models for Microarray Data)
-hgu133a.db     # Anotasi gen untuk platform Affymetrix GPL96
-AnnotationDbi  # Interface anotasi gen
-clusterProfiler # GO & KEGG Enrichment Analysis  ← TAMBAHAN
-org.Hs.eg.db   # Database gen manusia            ← TAMBAHAN
+GEOquery                       # Download data dari NCBI GEO
+limma                          # Analisis DEG (Linear Models for Microarray Data)
+hugene10sttranscriptcluster.db # Anotasi gen untuk platform Affymetrix GPL96
+AnnotationDbi                  # Interface anotasi gen
+clusterProfiler                # GO & KEGG Enrichment Analysis  
+org.Hs.eg.db                   # Database gen manusia            
 
 # CRAN
 ggplot2        # Volcano plot, visualisasi
@@ -79,7 +79,7 @@ umap           # Dimensionality reduction
 │     - Design matrix                             │
 │     - lmFit → eBayes → topTable                 │
 │         ↓                                       │
-│  5. Anotasi Gen (hgu133a.db)                    │
+│  5. Anotasi Gen (hugene10sttranscriptcluster.db)│
 │         ↓                                       │
 │  6. Visualisasi                                 │
 │     - Boxplot distribusi                        │
@@ -87,7 +87,7 @@ umap           # Dimensionality reduction
 │     - Volcano plot                              │
 │     - Heatmap top 50 DEG                        │
 │         ↓                                       │
-│  7. GO/KEGG Enrichment [TAMBAHAN]               │
+│  7. GO/KEGG Enrichment                          │
 │     - Biological Process (BP)                   │
 │     - KEGG Pathway                              │
 │         ↓                                       │
@@ -101,7 +101,7 @@ umap           # Dimensionality reduction
 ## 📁 Struktur Repository
 
 ```
-NomorKelompok_NamaProyek/
+Project-Bioinformatika-2026/
 ├── README.md
 ├── scripts/
 │   └── analysis.R          # Script R lengkap
@@ -110,8 +110,8 @@ NomorKelompok_NamaProyek/
 │   ├── umap_plot.png
 │   ├── volcano_plot.png
 │   ├── heatmap_top50.png
-│   ├── GO_enrichment.png   ← TAMBAHAN
-│   ├── KEGG_pathway.png    ← TAMBAHAN
+│   ├── GO_enrichment.png   
+│   ├── KEGG_pathway.png    
 │   └── DEG_results.csv
 └── paper/
     └── makalah.pdf

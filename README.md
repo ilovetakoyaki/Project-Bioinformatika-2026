@@ -2,7 +2,7 @@
 # 🧬 Analisis Differential Expression Genes (DEG) pada Kanker Pankreas
 ### Menggunakan Dataset GEO Publik (GSE10072) dengan Pendekatan Limma
 
-> **Mini Proyek Bioinformatika** | Bioinformatika | 
+> **Mini Proyek Bioinformatika** | **Bioinformatika** | **Kelas A** 
 
 ---
 
@@ -10,11 +10,11 @@
 
 | Nama | NIM |
 |------|-----|
-|Ade Riyana P.|499349
-|Hanin Izdihar|517672
-|Adha Nurkholifah|518426
-|Talitha Daris N.|518540
-|Devi Korniasari|519029
+|Ade Riyana P.|22/499349/BI/11052
+|Hanin Izdihar|23/517672/BI/11265
+|Adha Nurkholifah|23/518426/BI/11287
+|Talitha Daris N.|23/518540/BI/11294
+|Devi Korniasari|23/519029/BI/11306
 
 ---
 
@@ -34,7 +34,7 @@ Selain analisis DEG standar menggunakan **limma**, proyek ini menambahkan:
 |---------|--------|
 | **GEO Accession** | [GEO GSE28735](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi) |
 | **Platform** | Affymetrix Human Gene 1.0 ST Array  |
-| **Sampel** | 45Tumor + 45Normal Pancreatic Tissue (paired) |
+| **Sampel** | 45 Tumor + 45 Adjacent (paired) |
 | **Organisme** | *Homo sapiens* |
 
 
@@ -104,7 +104,7 @@ umap           # Dimensionality reduction
 Project-Bioinformatika-2026/
 ├── README.md
 ├── scripts/
-│   └── analysis.R          # Script R lengkap
+│   └── analysis.R        
 ├── results/
 │   ├── boxplot.png
 │   ├── umap_plot.png
@@ -115,6 +115,7 @@ Project-Bioinformatika-2026/
 │   └── DEG_results.csv
 └── paper/
     └── makalah.pdf
+    └── poster.cmyk
 ```
 
 ---
@@ -123,7 +124,7 @@ Project-Bioinformatika-2026/
 
 1. Install R (≥ 4.0) dan RStudio
 2. Buka `scripts/analysis.R` di RStudio
-3. Jalankan seluruh script (Ctrl+A → Ctrl+Enter)
+3. Jalankan seluruh script 
 4. Semua output akan tersimpan di folder `results/`
 
 > **Catatan:** Script akan otomatis menginstall package yang belum ada.
@@ -132,11 +133,11 @@ Project-Bioinformatika-2026/
 
 ## 📊 Hasil Utama
 
-- Total DEG teridentifikasi: **XXX gen** (padj < 0.05, |logFC| > 1)
-- Gen upregulated: **XXX**
-- Gen downregulated: **XXX**
-- Top hub genes: 
-- Jalur KEGG paling signifikan: 
+- Total DEG teridentifikasi: **496 gen** (padj < 0.05, |logFC| > 1)
+- Gen upregulated: 293
+- Gen downregulated: 203
+- Jalur gene ontology paling signifikan : Remodeling matriks ekstraseluler dan perubahan adhesi sel
+- Jalur KEGG paling signifikan: Pancreatic secretion dan Protein digestion and absorption
 
 ---
 

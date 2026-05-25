@@ -115,7 +115,7 @@ Project-Bioinformatika-2026/
 │   └── DEG_results.csv
 └── paper/
     └── makalah.pdf
-    └── poster.cmyk
+    └── poster.pdf
 ```
 
 ---

@@ -98,27 +98,6 @@ umap           # Dimensionality reduction
 
 ---
 
-## 📁 Struktur Repository
-
-```
-Project-Bioinformatika-2026/
-├── README.md
-├── scripts/
-│   └── analysis.R        
-├── results/
-│   ├── boxplot.png
-│   ├── umap_plot.png
-│   ├── volcano_plot.png
-│   ├── heatmap_top50.png
-│   ├── GO_enrichment.png   
-│   ├── KEGG_pathway.png    
-│   └── DEG_results.csv
-└── paper/
-    └── makalah.pdf
-    └── poster.pdf
-```
-
----
 
 ## ▶️ Cara Menjalankan
 
